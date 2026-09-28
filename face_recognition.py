@@ -10,10 +10,10 @@ people=['jasprith_bumrah','rohit_sharma','virat_kohli']
 face_recognizer=cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img=cv.imread(r'C:/Users/2488429/OneDrive - Cognizant/Desktop/Face_Detection_and_recognition/faces/val/jasprith_bumrah/bumrah_val_4.jpg')
+img=cv.imread(r'C:/Users/2488429/OneDrive - Cognizant/Desktop/Face_Detection_and_recognition/faces/val/virat_kohli/kohli_test_1.jpg')
 gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
-cv.imshow('Person',gray)
+cv.imshow('Person',img)
 
 #Detect the person
 faces_rect=haar_cascade.detectMultiScale(gray,1.1,4)
